@@ -94,7 +94,17 @@ body{
     border: 3px solid #16ff00;
     border-radius: 50%;
     transition: 0.3s;
+    animation: FloatImg 4s ease-in-out infinite;
 }
 .home .image img:hover{
     box-shadow: 0 0 1.6rem  #16ff00 ;
+}
+@keyframes FloatImg{
+     0%,
+     100%{
+        transform: translateY(0);
+     }
+    50%{
+        transform: translateY(-2.5rem);
+    }
 }
